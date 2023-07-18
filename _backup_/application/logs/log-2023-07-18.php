@@ -288,3 +288,6 @@ ERROR - 2023-07-18 15:32:20 --> Severity: Warning --> session_set_save_handler()
 ERROR - 2023-07-18 15:32:21 --> Severity: Warning --> session_set_cookie_params(): Cannot change session cookie parameters when session is active C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 298
 ERROR - 2023-07-18 15:32:21 --> Severity: Warning --> ini_set(): A session is active. You cannot change the session module's ini settings at this time C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 308
 ERROR - 2023-07-18 15:32:21 --> Severity: Warning --> session_set_save_handler(): Cannot change save handler when session is active C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 110
+ERROR - 2023-07-18 15:57:30 --> Severity: Warning --> session_set_cookie_params(): Cannot change session cookie parameters when session is active C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 298
+ERROR - 2023-07-18 15:57:30 --> Severity: Warning --> ini_set(): A session is active. You cannot change the session module's ini settings at this time C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 308
+ERROR - 2023-07-18 15:57:30 --> Severity: Warning --> session_set_save_handler(): Cannot change save handler when session is active C:\wamp64\www\pims\_backup_\system\libraries\Session\Session.php 110
