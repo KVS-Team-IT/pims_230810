@@ -1,0 +1,32 @@
+@media print { 
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+margin-bottom: 15px;
+}tr {
+    border: 1px solid #ccc;
+}
+th {
+    border: 1px solid #ccc;
+}
+td {
+    border: 1px solid #ccc;
+}
+.row {
+    width: 100%;
+}
+.col-sm-6 {
+    width: 49%;
+    float: left;
+    padding: 2px;
+}
+textarea , input,table {
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+#buttan{
+	display:none;
+}
+}
