@@ -16,6 +16,18 @@
     <script src="<?php echo base_url(); ?>js/jquery_validate.js"></script>
     <script src="<?php echo base_url(); ?>js/encrypt.js"></script>
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JS1YXSR0Q1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-JS1YXSR0Q1');
+    </script>
+
+
     <style>
     @font-face {
         font-family: 'text-security-disc';
@@ -106,15 +118,15 @@
                 <div class="form-group">
                     <label><i class="fas fa-user" aria-hidden="true"></i>&nbsp;Username<span
                             class="reqd">*</span></label>
-                    <input type="text" name="username" id="username" class="form-control" autocomplete="off"
-                        value="ADM1917" placeholder="Username">
+                    <input type="text" name="username" id="username" class="form-control" autocomplete="off" value=""
+                        placeholder="Username">
                     <span class="error"><?php echo form_error('username'); ?></span>
                 </div>
                 <div class="form-group">
                     <label><i class="fas fa-key" aria-hidden="true"></i>&nbsp;Password<span
                             class="reqd">*</span></label>
                     <input type="text" name="password" id="password" class="form-control password" autocomplete="off"
-                        value="Pims@2022" placeholder="Password">
+                        value="" placeholder="Password">
                     <span class="error"><?php echo form_error('password'); ?></span>
                 </div>
                 <div class="form-group clear">
@@ -229,6 +241,7 @@
         $('.splash').css('display', 'none');
     });
     </script>
+
 
 </body>
 
