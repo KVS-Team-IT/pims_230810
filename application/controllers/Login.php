@@ -21,7 +21,7 @@ class Login extends CI_Controller
 
             $this->form_validation->set_rules('username', 'UserName', 'required|xss_clean');
             $this->form_validation->set_rules('password', 'Password', 'required|xss_clean');
-            $this->form_validation->set_rules('captcha',  'Captcha',  'required|xss_clean|callback_check_captcha');
+            //$this->form_validation->set_rules('captcha',  'Captcha',  'required|xss_clean|callback_check_captcha');
 
             if ($this->form_validation->run() !== FALSE) {
                 //Call For Login Function
