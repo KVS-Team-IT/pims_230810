@@ -1,4 +1,4 @@
-<script src="<?php echo base_url(); ?>js/autologout.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/autologout.js"></script>
 <script>
 $(window).bind("load", function() {
     // Remove splash screen after load
@@ -14,16 +14,7 @@ $(window).bind("load", function() {
         </div>
     </div>
 </footer>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JS1YXSR0Q1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
 
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'G-JS1YXSR0Q1');
-</script>
 
 </body>
 

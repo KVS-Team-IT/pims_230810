@@ -21,7 +21,7 @@ $root = "http://" . $_SERVER['HTTP_HOST'];
 $root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"", $_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $root;
 */
-$config['base_url'] = 'http://10.199.167.234:8080/pims/_backup_/';
+$config['base_url'] = 'http://www/pims/_backup_/';
 
 /*
   |--------------------------------------------------------------------------
