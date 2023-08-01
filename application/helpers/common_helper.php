@@ -795,8 +795,8 @@ function getCaptcha()
     $ci = &get_instance();
     $ci->load->helper('captcha');
     $config = array(
-        'img_url'       => base_url() . 'captcha/',
-        'img_path'      => './captcha/',
+        'img_url'       => base_url() . 'writable/captcha/',
+        'img_path'      => './writable/captcha/',
         'img_width'     => '160',
         'img_height'    => 40,
         'word_length'   => 6,

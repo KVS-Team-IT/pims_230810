@@ -49,26 +49,26 @@
                     <!--<i class="fas fa-info-circle" style="font-size: 22px; color:#F44336;"></i> 
                         &nbsp;&nbsp;<a style="font-size: 14px; font-weight: bold; color:#014A69;"  data-toggle="modal" data-target="#myModal">Basic Instructions</a>
                         <hr>-->
-                    <a href="<?php echo base_url(''); ?>img/PIMS-Document1.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document1.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Employee Service Data
-                            Update Process Document<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
+                            Update Process Document<img src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif"
                                 height="25"></a>
                     </a>
                     <hr>
-                    <a href="<?php echo base_url(''); ?>img/PIMS-Document 2.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document 2.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Employee Profile
-                            Transfer Process Document<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
+                            Transfer Process Document<img src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif"
                                 height="25"></a>
                     </a>
                     <?php if ($this->role_id == 3) { ?>
                     <hr>
-                    <a href="<?php echo base_url(''); ?>img/PIMS-Document 3.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document 3.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Assign External
-                            Observer for Class Observation<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
-                                height="25"></a>
+                            Observer for Class Observation<img
+                                src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif" height="25"></a>
                     </a>
                     <?php } ?>
 

@@ -93,7 +93,7 @@ class Login_model extends CI_model
         $this->db->insert('sessions_info', $SessionData);
 
         //Map New Session Id To USER
-        $this->db->where(array(id => $UserInfo['user_id']));
+        $this->db->where(array('id' => $UserInfo['user_id']));
         $this->db->update('users', array('session_id' => $newSessionId));
     }
     //======================== S E T  S E S S I O N  U S E R I N F O ===========================//
