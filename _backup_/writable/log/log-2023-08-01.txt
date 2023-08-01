@@ -1,0 +1,5 @@
+ERROR - 2023-08-01 15:06:09 --> Severity: 8192 --> strpos(): Non-string needles will be interpreted as strings in the future. Use an explicit chr() call to preserve the current behavior D:\php\pims\_backup_\application\assets\MX\Router.php 239
+ERROR - 2023-08-01 15:06:09 --> Severity: error --> Exception: Call to undefined method MY_Loader::_ci_object_to_array() D:\php\pims\_backup_\application\assets\MX\Loader.php 300
+ERROR - 2023-08-01 15:07:41 --> Severity: 8192 --> strpos(): Non-string needles will be interpreted as strings in the future. Use an explicit chr() call to preserve the current behavior D:\php\pims\_backup_\application\assets\MX\Router.php 239
+ERROR - 2023-08-01 15:07:41 --> Severity: 8192 --> strpos(): Non-string needles will be interpreted as strings in the future. Use an explicit chr() call to preserve the current behavior D:\php\pims\_backup_\application\assets\MX\Router.php 239
+ERROR - 2023-08-01 15:07:43 --> Severity: error --> Exception: Call to undefined method MY_Loader::_ci_object_to_array() D:\php\pims\_backup_\application\assets\MX\Loader.php 300
