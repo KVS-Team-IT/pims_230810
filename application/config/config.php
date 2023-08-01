@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://www/pims/';
+$config['base_url'] = 'http://10.199.167.234:8080/pims/';
 
 /*
 |--------------------------------------------------------------------------
