@@ -1,0 +1,62 @@
+<?php
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+class MailerLib
+{
+    public function __construct(){
+        log_message('Debug', 'PHPMailer class is loaded.');
+    }
+
+    public function load(){
+        // Include PHPMailer library files
+        require_once APPPATH.'assets/PHPMailer/Exception.php';
+        require_once APPPATH.'assets/PHPMailer/PHPMailer.php';
+        require_once APPPATH.'assets/PHPMailer/SMTP.php';
+        
+        $mail = new PHPMailer;
+        return $mail;
+    }
+    public function pushMail($Sub,$Msg,$To){
+        
+        // PHPMailer object
+        $mail = $this->load();
+        $mail->isSMTP();
+        //$mail->Host     = 'ssl://smtp.googlemail.com';
+	$mail->Host     = 'relay.nic.in';
+        //$mail->SMTPAuth = true;
+	//$mail->SMTPAuth = false;
+        //$mail->Username = 'aasit.analyst@gmail.com';
+        //$mail->Password = '';
+        $mail->SMTPSecure = 'ssl';
+        //$mail->Port     = 465;
+	$mail->Port     = 25;
+        
+        $mail->setFrom('noreply-kvspis@gov.in', 'KVS PIMS');
+        $mail->addReplyTo('acedpkvs@gmail.com', 'KVS PIMS');
+        
+        // Add a recipient
+        //$mail->addAddress($To);
+	$mail->addAddress('mail2aasit@gmail.com');
+        // Add cc or bcc 
+        //$mail->addCC('cc@example.com');
+        //$mail->addBCC('bcc@example.com');
+        
+        $mail->Subject = $Sub;
+        
+        // Set email format to HTML
+        $mail->isHTML(true);
+        
+        // Email body content
+        $mailContent = $Msg;
+        $mail->Body = $mailContent;
+        $mail->send();
+        // Send email
+       if(!$mail->send()){
+        echo 'Message could not be sent.';
+        echo 'Mailer Error: ' . $mail->ErrorInfo;
+       }else{
+         echo 'Message has been sent';
+       }
+    }
+}
