@@ -13,7 +13,6 @@ class Assessment extends MY_Controller
     public function index($id = null)
     {
 
-
         //$view = 'maintain_mode';   
         $kv_code = $this->session->userdata['master_code'];
 
@@ -53,7 +52,6 @@ class Assessment extends MY_Controller
     public function all()
     { //die(hhh);
 
-
         $view = 'listing_all';
         $data = array(
             'title' => WEBSITE_TITLE . ' - Assesment Abilities ',
@@ -61,7 +59,7 @@ class Assessment extends MY_Controller
             'style_sheets' => array(),
             'content' => $this->load->view($view, (isset($view_data)) ? $view_data : '', TRUE)
         );
-        //print_r($view_data);
+
 
         $this->load->view($this->template, $data);
     }
@@ -111,8 +109,10 @@ class Assessment extends MY_Controller
         }
         if ($id == 1) {
             $view = 'progress_report_class_1st';
-        } else {
+        } else if ($id == 2) {
             $view = 'progress_report_class_2nd';
+        } else if ($id == 3) {
+            $view = 'progress_report_class_3rd';
         }
         $data = array(
             'title' => WEBSITE_TITLE . '- Progress Status',

@@ -104,7 +104,7 @@ class MY_Controller extends CI_Controller
     public function is_password_changed()
     {
         if ($this->session->userdata('is_password_changed') == '0') {
-            redirect(base_url() . 'Update-Default-Password');
+            //redirect(base_url() . 'Update-Default-Password');
         }
     }
 
