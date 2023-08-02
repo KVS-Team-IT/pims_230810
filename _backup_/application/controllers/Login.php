@@ -14,7 +14,7 @@ class Login extends CI_Controller
     {
         //If Session Exists Redirect To User Dashboard
         if ($this->session->userdata('is_logged_in') == TRUE) {
-            //redirect(base_url().'home');
+            redirect(base_url() . 'home');
         }
         //Check Login Request By Post Method
         if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
