@@ -18,7 +18,7 @@ class Login_model extends CI_model
         if ($qry->num_rows()) {
             // Match Password Against Existing Password
             $db_password = hash_hmac('sha512', $qry->row()->PWD, $this->session->userdata('secKey'));
-            if (($db_password == $post['password']) || (1 == 1)) {
+            if ($db_password == $post['password']) {
                 //$SESS_DATA=$this->session->userdata();
                 $this->db->where('session_id', $this->session->userdata('__ci_last_regenerate'));
                 $this->db->delete('ci_secret_key');

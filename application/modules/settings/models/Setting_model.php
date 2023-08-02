@@ -58,4 +58,3 @@ class Setting_model extends CI_model{
         }   
     }
 }
-?>
