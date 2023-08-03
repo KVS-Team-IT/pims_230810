@@ -39,8 +39,11 @@ class Login extends CI_Controller
             }
             add_user_activity('0', '', 'Login Failure', json_encode($this->input->post()), 'Login Module');
         }
-        $random_string = random_string('alnum', 20);
+        //$random_string = random_string('alnum', 20);
+        $random_string = "PRADAKSHINA";
         $this->session->set_userdata('secKey', $random_string);
+
+
         $view_data['enKey'] = $random_string;
         $view_data['captchaImg'] = getCaptcha();
         //Load Login View

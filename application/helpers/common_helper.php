@@ -794,6 +794,7 @@ function getCaptcha()
 {
     $ci = &get_instance();
     $ci->load->helper('captcha');
+
     $config = array(
         'img_url'       => base_url() . 'writable/captcha/',
         'img_path'      => './writable/captcha/',
@@ -802,6 +803,7 @@ function getCaptcha()
         'word_length'   => 6,
         'font_size'     => 18,
         'font_path'     => FCPATH . 'system/fonts/texb.ttf',
+
         'pool'          => '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
         'colors'        => array(
             'background' => array(255, 255, 255),
@@ -810,7 +812,22 @@ function getCaptcha()
             'grid'      => array(180, 182, 182)
         )
     );
+
     //pr($config);die;
+
+    /*
+    $config = array(
+        'img_path'      => 'captcha/',
+        'img_url'       => base_url() . 'captcha/',
+        'font_path'     => FCPATH . 'assets/fonts/font.otf',
+        'img_width'     => 160,
+        'img_height'    => 40,
+        'word_length'   => 6,
+        'font_size'     => 18
+    );
+*/
+
+
     $captcha = create_captcha($config);
     $ci->session->unset_userdata('captcha');
     $ci->session->set_userdata('captcha', $captcha['word']);
