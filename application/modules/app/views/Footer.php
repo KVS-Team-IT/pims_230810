@@ -1,20 +1,27 @@
-<script src="<?php echo base_url(); ?>assets/js/autologout.js"></script>
+<script src="<?php echo base_url(); ?>js/autologout.js"></script>
 <script>
-$(window).bind("load", function() {
-    // Remove splash screen after load
-    $('.splash').css('display', 'none');
-});
+    $(window).bind("load", function() {
+        // Remove splash screen after load
+        $('.splash').css('display', 'none');
+    });
 </script>
 <footer class="sticky-footer">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright © <?php echo date("Y", strtotime("-1 year")) . '-' . date('Y'); ?> <a
-                    style="color:#fff!important; text-decoration: underline;" href="http://kvsangathan.nic.in"
-                    target="_blank">Kendriya Vidyalaya Sangathan</a> | All Rights Reserved.</span>
+            <span>Copyright © <?php echo date("Y", strtotime("-1 year")) . '-' . date('Y'); ?> <a style="color:#fff!important; text-decoration: underline;" href="http://kvsangathan.nic.in" target="_blank">Kendriya Vidyalaya Sangathan</a> | All Rights Reserved.</span>
         </div>
     </div>
 </footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JS1YXSR0Q1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
 
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-JS1YXSR0Q1');
+</script>
 
 </body>
 

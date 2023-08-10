@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
-
+date_default_timezone_set('Asia/Kolkata');
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -27,7 +27,7 @@ $base = (isset($_SERVER['HTTPS']) && (($_SERVER['HTTPS'] == 'on') || ($_SERVER['
 $base .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 $config['base_url'] = $base;
 
-date_default_timezone_set('Asia/Kolkata');
+
 
 
 /*

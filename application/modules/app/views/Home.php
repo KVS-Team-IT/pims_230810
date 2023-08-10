@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PIMS | HOME</title>
+    <style>
+    a[href^="mailto:"] {
+        font-family: sans-serif;
+        color: #ffffff;
+        font-weight: bold;
+    }
+    </style>
+</head>
 <div id="content-wrapper">
     <div class="container-fluid">
         <div class="breadcrumb">
@@ -12,31 +26,31 @@
                                 style="font-size: 16px; color:#014a69;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $this->user_name; ?></i>
                             <hr>
                             <i class="fas fa-address-card"
-                                style="font-size: 16px;color:#00BCD4;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $UD->NAME; ?>
+                                style="font-size: 16px;color:#00BCD4;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $UD->NAME;?>
                             <hr>
                             <i class="fas fa-envelope"
-                                style="font-size: 16px; color:#F44336;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $UD->EMAIL; ?>
+                                style="font-size: 16px; color:#F44336;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $UD->EMAIL;?>
                         </ul>
                     </div>
                     <div class="col-md-4 text-center">
-                        <?php
-                        if ($this->role_id == 5) {
-                            echo '<i class="fas fa-building" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
-                        } else if ($this->role_id == 6) {
-                            echo '<i class="fas fa-user" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
-                        } else {
-                            echo '<i class="fas fa-university" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
+                        <?php 
+                        if($this->role_id==5){
+                        echo '<i class="fas fa-building" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
+                        }else if($this->role_id==6){
+                        echo '<i class="fas fa-user" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
+                        }else{
+                        echo '<i class="fas fa-university" style="font-size:200px;color: #014a69;border: 1px solid #ccc;border-radius: 150px;padding: 30px 50px 40px 50px;"></i>';
                         }
                         ?>
-                        <?php echo '<br><div style="font-weight: bold; font-size: 24px; color: #aaa; letter-spacing: 5px; text-shadow: 1px 1px #1a1a1a;">' . strtoupper($UD->PLACE) . '</div><hr><div style="color: #f36d1b;font-size: 18px;">' . $UD->NAME; ?>
+                        <?php echo '<br><div style="font-weight: bold; font-size: 24px; color: #aaa; letter-spacing: 5px; text-shadow: 1px 1px #1a1a1a;">'.strtoupper($UD->PLACE).'</div><hr><div style="color: #f36d1b;font-size: 18px;">'.$UD->NAME;?>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <?php if ($this->role_id == 6) { ?>
+                    <?php if($this->role_id==6){ ?>
                     <i class="fas fa-user-edit" style="font-size: 22px; color: #01a0e2;"></i>
                     &nbsp;&nbsp;<a style="font-size: 14px; font-weight: bold;"
-                        href="<?php echo base_url('my-profile/') . EncryptIt($this->user_name); ?>">My Profile</a>
-                    <?php } else { ?>
+                        href="<?php echo base_url('my-profile/'). EncryptIt($this->user_name); ?>">My Profile</a>
+                    <?php }else{ ?>
                     <i class="fas fa-chart-pie" style="font-size: 22px; color: #01a0e2;"></i>
                     &nbsp;&nbsp;<a style="font-size: 14px; font-weight: bold;"
                         href="<?php echo base_url('dashboard'); ?>">Goto Dashboard</a>
@@ -44,31 +58,31 @@
                     <hr>
                     <i class="fas fa-key" style="font-size: 22px; color: #ff9800;"></i>
                     &nbsp;&nbsp;<a style="font-size: 14px; font-weight: bold;"
-                        href="<?php echo base_url('Update-Login-Password'); ?>">Update Password</a>
+                        href="<?php echo base_url('Update-Login-Password');?>">Update Password</a>
                     <hr>
                     <!--<i class="fas fa-info-circle" style="font-size: 22px; color:#F44336;"></i> 
                         &nbsp;&nbsp;<a style="font-size: 14px; font-weight: bold; color:#014A69;"  data-toggle="modal" data-target="#myModal">Basic Instructions</a>
                         <hr>-->
-                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document1.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>img/PIMS-Document1.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Employee Service Data
-                            Update Process Document<img src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif"
+                            Update Process Document<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
                                 height="25"></a>
                     </a>
                     <hr>
-                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document 2.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>img/PIMS-Document 2.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Employee Profile
-                            Transfer Process Document<img src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif"
+                            Transfer Process Document<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
                                 height="25"></a>
                     </a>
-                    <?php if ($this->role_id == 3) { ?>
+                    <?php if($this->role_id==3){ ?>
                     <hr>
-                    <a href="<?php echo base_url(''); ?>assets/img/PIMS-Document 3.0.pdf" target="_blank">
+                    <a href="<?php echo base_url(''); ?>img/PIMS-Document 3.0.pdf" target="_blank">
                         <i class="fas fa-download" style="font-size: 22px; color:#F44336;"></i>
                         &nbsp;&nbsp;<a style="font-size: 12px; font-weight: bold; color:#014A69;">Assign External
-                            Observer for Class Observation<img
-                                src="<?php echo base_url(''); ?>assets/img/new-gif-image.gif" height="25"></a>
+                            Observer for Class Observation<img src="<?php echo base_url(''); ?>img/new-gif-image.gif"
+                                height="25"></a>
                     </a>
                     <?php } ?>
 
@@ -143,16 +157,13 @@
     </div>
     <!-- ================================ MODAL POPUP END ================================== -->
 </div>
-<style>
-a[href^="mailto:"] {
-    font-family: sans-serif;
-    color: #ffffff;
-    font-weight: bold;
-}
-</style>
+</body>
+
+</html>
+
 <script>
 $(document).ready(function() {
-    var LogRole = '<?php echo $this->session->userdata('role_id'); ?>';
+    var LogRole = '<?php echo $this->session->userdata('role_id');?>';
     if (LogRole && LogRole == 5) {
         // $('#myModal').modal('show');
     }

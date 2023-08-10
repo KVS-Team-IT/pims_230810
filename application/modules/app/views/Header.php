@@ -5,8 +5,7 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <title><?php echo $title; ?></title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
     <meta content="KVS-PIS" name="Kendriya Vidyalaya Sangathan" />
     <meta content="Kendriya Vidyalaya Sangathan" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -56,15 +55,15 @@
     <script src="<?php echo base_url(); ?>assets/vendor/select2/js/select2.js"></script>
     <link href="<?php echo base_url(); ?>assets/vendor/select2/css/select2.css" rel="stylesheet" />
     <script type="text/javascript">
-    function aes_enc(txt, key) {
-        var encrypted = CryptoJS.AES.encrypt(txt, key);
-        return encrypted;
-    }
+        function aes_enc(txt, key) {
+            var encrypted = CryptoJS.AES.encrypt(txt, key);
+            return encrypted;
+        }
 
-    function aes_dec(txt, key) {
-        var decrypted = CryptoJS.AES.decrypt(txt, key);
-        return decrypted.toString(CryptoJS.enc.Utf8);
-    }
+        function aes_dec(txt, key) {
+            var decrypted = CryptoJS.AES.decrypt(txt, key);
+            return decrypted.toString(CryptoJS.enc.Utf8);
+        }
     </script>
     <?php
     if (isset($javascripts)) {
@@ -92,8 +91,7 @@
     <div class="splash">
         <div class="splash-title">
             <h5>PERSONNEL INFORMATION MANAGEMENT SYSTEM</h5>
-            Data loading...<img class="rounded" src="<?php echo base_url(); ?>assets/img/loading-bars.svg" width="40"
-                height="40"> Please Wait.
+            Data loading...<img class="rounded" src="<?php echo base_url(); ?>assets/img/loading-bars.svg" width="40" height="40"> Please Wait.
         </div>
     </div>
     <!-- ======================= Loader / Splash Div =======================-->
@@ -113,20 +111,16 @@
                         </a>
                     </div>
                     <div class="col-sm-8">
-                        <h6
-                            style="margin-bottom: 0; color: #ff8d17!important;font-size: 16px;text-shadow: 1px 1px 1px #1a1a1a;">
+                        <h6 style="margin-bottom: 0; color: #ff8d17!important;font-size: 16px;text-shadow: 1px 1px 1px #1a1a1a;">
                             केंद्रीय विद्यालय संगठन </h6>
                         <div class="clearfix"></div>
-                        <span
-                            style="text-shadow: 1px 1px 1px #1a1a1a;letter-spacing: 1px;color: #f8f8f9;font-size: 12.7px;">KENDRIYA
+                        <span style="text-shadow: 1px 1px 1px #1a1a1a;letter-spacing: 1px;color: #f8f8f9;font-size: 12.7px;">KENDRIYA
                             VIDYALAYA SANGATHAN</span>
                         <div class="clearfix"></div>
-                        <small
-                            style="color: #54a706; text-shadow: 1px 1px 1px #1a1a1a; font-size: 75% !important">शिक्षा
+                        <small style="color: #54a706; text-shadow: 1px 1px 1px #1a1a1a; font-size: 75% !important">शिक्षा
                             मंत्रालय भारत सरकार के अधीन एवं स्वायत्त निकाय</small>
                         <div class="clearfix"></div>
-                        <small
-                            style="color: #54a706; text-shadow: 1px 1px 1px #1a1a1a; font-size: 75% !important;position: absolute;margin-top: -5px;">An
+                        <small style="color: #54a706; text-shadow: 1px 1px 1px #1a1a1a; font-size: 75% !important;position: absolute;margin-top: -5px;">An
                             Autonomous Body Under Ministry of Education,<br>
                             Government of India.</small>
                     </div>
@@ -135,14 +129,11 @@
             <div class="col-xl-4 col-sm-12">
                 <div class="row text-center">
                     <div class="col-sm-12">
-                        <label
-                            style="letter-spacing: 7px;margin-bottom: -4px;color: #FF9800;text-shadow: 1px 1px 0px #4c9b0b;font-size: 24px;font-family: auto;">
-                            <img src="<?php echo base_url(); ?>assets/img/PIMS.png" alt="Digital India" width="25"
-                                height="25" style=" margin-top: -8px; margin-right: 3px;">PIMS
+                        <label style="letter-spacing: 7px;margin-bottom: -4px;color: #FF9800;text-shadow: 1px 1px 0px #4c9b0b;font-size: 24px;font-family: auto;">
+                            <img src="<?php echo base_url(); ?>assets/img/PIMS.png" alt="Digital India" width="25" height="25" style=" margin-top: -8px; margin-right: 3px;">PIMS
                         </label>
                         <hr>
-                        <label
-                            style="letter-spacing: 2px;font-size: 14px;color: #ffffff; font-family: sans-serif;text-shadow: 1px 1px 5px #1a1a1a;">[
+                        <label style="letter-spacing: 2px;font-size: 14px;color: #ffffff; font-family: sans-serif;text-shadow: 1px 1px 5px #1a1a1a;">[
                             Personnel Information Management System ]</label>
 
                     </div>
@@ -152,38 +143,33 @@
                 <div class="row">
                     <div class="col-sm-6 px-5">
                         <a href="http://digitalindiaportal.co.in/" title="Digital India" target="_blank">
-                            <img src="<?php echo base_url(); ?>assets/img/digital-ind.png" alt="Digital India"
-                                width="175" height="75">
+                            <img src="<?php echo base_url(); ?>assets/img/digital-ind.png" alt="Digital India" width="175" height="75">
                         </a>
                     </div>
                     <div class="col-sm-6">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item dropdown no-arrow text-center">
-                                <a class="nav-link" href="<?php echo base_url('notifications'); ?>" aria-haspopup="true"
-                                    aria-expanded="false">
+                                <a class="nav-link" href="<?php echo base_url('notifications'); ?>" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-comments fa-3" style="font-size: 40px; color: #8BC34A;">
                                         <?php
                                         $ids = $this->session->userdata('user_id');
                                         $msg = GetNotificationCount($ids);
                                         if (!empty($msg)) {
                                         ?>
-                                        <span
-                                            style="background: #f00; color: #cccccc; border-radius: 20px; padding: 2px 6px; position: absolute; top: 0px; right: 90%; font-size: 12px;">
-                                            <?php echo $msg; ?>
-                                        </span>
+                                            <span style="background: #f00; color: #cccccc; border-radius: 20px; padding: 2px 6px; position: absolute; top: 0px; right: 90%; font-size: 12px;">
+                                                <?php echo $msg; ?>
+                                            </span>
                                         <?php } ?>
                                     </i>
                                 </a>
                             </li>
                             <li class="nav-item dropdown no-arrow text-center px-4">
-                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-user-circle fa-3" style="font-size:36px;"></i>
                                     <br><small>Hi! <?php echo ucfirst($this->user_name); ?></small>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                                    <a class="dropdown-item"
-                                        href="<?php echo site_url('Update-Login-Password'); ?>">Update Password</a>
+                                    <a class="dropdown-item" href="<?php echo site_url('Update-Login-Password'); ?>">Update Password</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="<?php echo site_url('Logout'); ?>">Logout</a>
                                 </div>
@@ -194,9 +180,3 @@
             </div>
         </div>
     </nav>
-
-
-
-    <!--    <a class="scroll-to-top rounded" href="#page-top">
-      <i class="fas fa-angle-up"></i>
-    </a>-->

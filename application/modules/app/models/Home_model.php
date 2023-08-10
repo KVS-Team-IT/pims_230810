@@ -1,13 +1,10 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-class Home_model extends CI_Model
-{
-    public function __construct()
-    {
+<?php if( ! defined('BASEPATH') ) exit('No direct script access allowed');
+class Home_model extends CI_Model {
+	public function __construct(){
         parent::__construct();
     }
-    public function LogMasterData($LogID, $LogRO)
-    {
-        $SacKvsHQ = "SELECT 
+    public function LogMasterData($LogID,$LogRO) {
+        $SacKvsHQ="SELECT 
         U.id AS 'UID',R.`name` AS 'PLACE',C.`name` AS 'DEPT',RO.`name` AS 'REGION',U.email_id AS 'EMAIL',
         (CASE 
                 WHEN U.role_id=1 THEN 'PIMS ADMIN'
@@ -29,7 +26,7 @@ class Home_model extends CI_Model
         LEFT JOIN ci_employee_details EM ON(U.username=EM.emp_code)
         WHERE U.id=$LogID GROUP BY U.id";
         $query = $this->db->query($SacKvsHQ);
-        if ($query->num_rows() > 0) {
+        if($query->num_rows() > 0) {
             return $query->row();
         } else {
             return array();

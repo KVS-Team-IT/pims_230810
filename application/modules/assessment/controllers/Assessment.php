@@ -59,7 +59,7 @@ class Assessment extends MY_Controller
             'style_sheets' => array(),
             'content' => $this->load->view($view, (isset($view_data)) ? $view_data : '', TRUE)
         );
-
+        //print_r($view_data);
 
         $this->load->view($this->template, $data);
     }
@@ -109,10 +109,8 @@ class Assessment extends MY_Controller
         }
         if ($id == 1) {
             $view = 'progress_report_class_1st';
-        } else if ($id == 2) {
+        } else {
             $view = 'progress_report_class_2nd';
-        } else if ($id == 3) {
-            $view = 'progress_report_class_3rd';
         }
         $data = array(
             'title' => WEBSITE_TITLE . '- Progress Status',

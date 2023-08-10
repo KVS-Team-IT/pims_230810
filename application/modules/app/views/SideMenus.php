@@ -1796,11 +1796,6 @@
                     </a>
 
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="<?php echo site_url('assessment/3'); ?>">
-                        <i class="fa fa-users" aria-hidden="true"></i>&nbsp; Class 3
-                    </a>
-
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="<?php echo site_url('recycle_bin_list'); ?>">
                         <i class="fa fa-hand-o-right" aria-hidden="true"></i>&nbsp;RECYCLE BIN
                     </a>
